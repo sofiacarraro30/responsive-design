@@ -7,7 +7,7 @@
 /*variables: reserva en la memora de mi pc*/
 :root {
     --cream: hsl(30, 38%, 92%);
-    --white: White: hsl(0, 0%, 100%);
+    --white: hsl(0, 0%, 100%);
     --grey: hsl(228, 12%, 48%);
     --black: hsl(212, 21%, 14%);
     --green-500: hsl(158, 36%, 37%);
@@ -90,18 +90,19 @@ p{
 }
 
 button {
-    color: var(--white);
     border: none;
     padding: 10px;
     background-color: var(--green-500);
     border-radius: 5px;
+    color: var(--white);
     font-family: var(--montserrat);
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color .1s ;
+    transition: background-color .1s;
 
 
 }
