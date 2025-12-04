@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+background-color: yellowgreen;
+padding: 20px;
+font-family: "Montserrat";
+
+}
+
+.content-mobile {
+    display: none;
+}
+
+
+/*media query para tablet*/
+
+@media (max-width: 880px){
+    .container {
+        background-color: gold;
+        color: black;
+        border: 2px solid darkgoldenrod;
+    }
+}
+
+/* mientras el ancho de la pantalla tenga 480px como maximo, incorporá los siguietes estilos*/
+
+@media (max-width: 480px) {
+.content-pc {
+    display: none;
+}
+
+.content-mobile {
+    display: block;
+}
+
+.container {
+    background-color: green;
+    color: whitesmoke;
+    text-align: center;
+}
+
+}
+

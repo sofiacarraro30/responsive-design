@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*variables: reserva en la memora de mi pc*/
+:root {
+    --cream: hsl(30, 38%, 92%);
+    --white: White: hsl(0, 0%, 100%);
+    --grey: hsl(228, 12%, 48%);
+    --black: hsl(212, 21%, 14%);
+    --green-500: hsl(158, 36%, 37%);
+    --green-700: hsl(158, 42%, 18%);
+    --montserrat: "Montserrat";
+    --fraunces: "Fraunces"
+}
+
+body {
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.container {
+    background-color: white;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+
+
+}
+
+.perfume {
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+
+    
+}
+.container-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+
+}
+
+h3 {
+    font-family: var(--montserrat);
+    color: var(--grey);
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 5px;
+    
+}
+
+h2 {
+    font-family: var(--fraunces);
+    font-size: 30px;
+    
+}
+
+p{
+    font-family: var(--montserrat);
+    font-size: 12px;
+    color: var(--grey);
+}
+
+.container-price {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.discount {
+    font-family: var(--fraunces);
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--green-500);
+}
+
+.price {
+    text-decoration: line-through;
+}
+
+button {
+    color: var(--white);
+    border: none;
+    padding: 10px;
+    background-color: var(--green-500);
+    border-radius: 5px;
+    font-family: var(--montserrat);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color .1s ;
+
+
+}
+
+button:hover {
+    background-color: var(--green-700);
+}
+
+.perfume-mobile {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    body {
+        padding: 20px
+    }
+
+    .perfume {
+        display: none;
+
+    }
+    .perfume-mobile {
+        display: block;
+        width: 100%;
+    }
+}
